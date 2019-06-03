@@ -14,8 +14,9 @@ import { ButtonComponent } from './button/button.component';
   providers: []
 })
 
-export class AppModule {
 
+export class AppModule {
+  
   private injector: Injector;
 
   constructor(injector: Injector) {
@@ -25,7 +26,12 @@ export class AppModule {
   public ngDoBootstrap() {
 
     const button = createCustomElement(ButtonComponent, { injector: this.injector });
-    customElements.define('app-button', button);
+
+    if (!customElements.get('app-button')) {
+
+      customElements.define('app-button', button);
+
+    }
 
   }
 

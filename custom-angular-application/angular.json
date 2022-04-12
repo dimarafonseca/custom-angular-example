@@ -31,8 +31,9 @@
               "src/styles.scss",
               "src/assets/elements/styles.css"
             ],
-            "scripts": ["src/assets/elements/custom-angular-elements.js"],
-            "es5BrowserSupport": true
+            "scripts": [
+              "src/assets/elements/custom-angular-elements.js"
+            ]
           },
           "configurations": {
             "production": {

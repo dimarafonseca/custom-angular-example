@@ -4,14 +4,13 @@ import { createCustomElement } from '@angular/elements';
 import { ButtonComponent } from './button/button.component';
 
 @NgModule({
-  declarations: [
-    ButtonComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  entryComponents: [ButtonComponent],
-  providers: []
+    declarations: [
+        ButtonComponent
+    ],
+    imports: [
+        BrowserModule
+    ],
+    providers: []
 })
 
 

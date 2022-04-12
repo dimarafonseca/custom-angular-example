@@ -9,7 +9,6 @@ const concat = require('concat');
     ]
     await fs.ensureDir('elements')
     await concat(files, 'elements/custom-angular-elements.js');
-    await fs.copyFile('./dist/custom-angular-elements/styles.css', 'elements/styles.css')
-    await fs.copy('./dist/custom-angular-elements/assets/', 'elements/assets/')
+    await fs.copyFile('./dist/custom-angular-elements/styles.css', 'elements/styles.css');
 
 })()
